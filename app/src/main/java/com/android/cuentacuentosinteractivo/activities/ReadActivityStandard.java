@@ -23,6 +23,7 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -32,6 +33,7 @@ import com.android.cuentacuentosinteractivo.customs.CustomPagerAdapter;
 import com.android.cuentacuentosinteractivo.customs.CustomViewPagerStandard;
 import com.android.cuentacuentosinteractivo.utils.Constants;
 import com.android.cuentacuentosinteractivo.utils.MusicManager;
+import com.android.cuentacuentosinteractivo.utils.UtilsCustom;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -438,7 +440,6 @@ public class ReadActivityStandard extends ReadActivity {
         //Para esperar a que el autoplay se ponga solo
         lockButtons();
         lockTap();
-
 
         //Operaciones que tienen que esperar a que el layout esté definido
         mainLayout.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -4065,6 +4066,7 @@ public class ReadActivityStandard extends ReadActivity {
                     setMusicIconOff();
                     music_btn.setBackground(getResources().getDrawable(R.drawable.ripple_purple_btn_disabled, null));
                 }
+                testFrameAnimations();
 
                 unlockButtons();
                 unlockTap();
@@ -4079,6 +4081,84 @@ public class ReadActivityStandard extends ReadActivity {
         anim.setInterpolator((PathInterpolator) (AnimationUtils.loadInterpolator(
                 getApplicationContext(), android.R.interpolator.fast_out_slow_in)));
         anim.start();
+    }
+
+    private void testFrameAnimations() {
+
+        //Test frameAnimation
+        ImageView cartmanView = new ImageView(mContext);
+        AnimationDrawable cartmanFrames;
+
+        cartmanFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_cartman, mContext);
+        cartmanView.setImageDrawable(cartmanFrames);
+
+        FrameLayout.LayoutParams positionParams = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParams.leftMargin = mapaFrames.get(R.drawable.frames_cartman).x;
+        positionParams.topMargin = mapaFrames.get(R.drawable.frames_cartman).y;
+
+        mainLayout.addView(cartmanView, positionParams);
+        cartmanFrames.start();
+
+        //Test frameAnimation
+        ImageView kennyView = new ImageView(mContext);
+        AnimationDrawable kennyFrames;
+
+        kennyFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kenny, mContext);
+        kennyView.setImageDrawable(kennyFrames);
+
+        FrameLayout.LayoutParams positionParamsKenny = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsKenny.leftMargin = mapaFrames.get(R.drawable.frames_kenny).x;
+        positionParamsKenny.topMargin = mapaFrames.get(R.drawable.frames_kenny).y;
+
+        mainLayout.addView(kennyView, positionParamsKenny);
+        kennyFrames.start();
+
+        //Test frameAnimation
+        ImageView kyleView = new ImageView(mContext);
+        AnimationDrawable kyleFrames;
+
+        kyleFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kyle, mContext);
+        kyleView.setImageDrawable(kyleFrames);
+
+        FrameLayout.LayoutParams positionParamsKyle = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsKyle.leftMargin = mapaFrames.get(R.drawable.frames_kyle).x;
+        positionParamsKyle.topMargin = mapaFrames.get(R.drawable.frames_kyle).y;
+
+        mainLayout.addView(kyleView, positionParamsKyle);
+        kyleFrames.start();
+
+        //Test frameAnimation
+        ImageView wendyView = new ImageView(mContext);
+        AnimationDrawable wendyFrames;
+
+        wendyFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_wendy, mContext);
+        wendyView.setImageDrawable(wendyFrames);
+
+        FrameLayout.LayoutParams positionParamsWendy = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsWendy.leftMargin = mapaFrames.get(R.drawable.frames_wendy).x;
+        positionParamsWendy.topMargin = mapaFrames.get(R.drawable.frames_wendy).y;
+
+        mainLayout.addView(wendyView, positionParamsWendy);
+        wendyFrames.start();
+
+        //Test frameAnimation
+        ImageView soutView = new ImageView(mContext);
+        AnimationDrawable soutFrames;
+
+        soutFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_sout, mContext);
+        soutView.setImageDrawable(soutFrames);
+
+        FrameLayout.LayoutParams positionParamsSout = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsSout.leftMargin = mapaFrames.get(R.drawable.frames_sout).x;
+        positionParamsSout.topMargin = mapaFrames.get(R.drawable.frames_sout).y;
+
+        mainLayout.addView(soutView, positionParamsSout);
+        soutFrames.start();
     }
 
     private void startShowLayoutBL() {

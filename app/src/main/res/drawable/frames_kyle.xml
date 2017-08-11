@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_anim_music_off_on"  android:oneshot="false" >
+    
+    
+    <item android:drawable="@drawable/kyle_0" android:duration="80" />
+    <item android:drawable="@drawable/kyle_1" android:duration="80" />
+    <item android:drawable="@drawable/kyle_2" android:duration="80" />
+    <item android:drawable="@drawable/kyle_3" android:duration="80" />
+    <item android:drawable="@drawable/kyle_4" android:duration="80" />
+    <item android:drawable="@drawable/kyle_5" android:duration="80" />
+
+
+
+    
+</animation-list>

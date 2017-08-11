@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_anim_music_off_on"  android:oneshot="false" >
+    
+    
+    <item android:drawable="@drawable/sout_00" android:duration="80" />
+    <item android:drawable="@drawable/sout_01" android:duration="80" />
+    <item android:drawable="@drawable/sout_02" android:duration="80" />
+    <item android:drawable="@drawable/sout_03" android:duration="80" />
+    <item android:drawable="@drawable/sout_04" android:duration="80" />
+
+    <item android:drawable="@drawable/sout_06" android:duration="80" />
+    <item android:drawable="@drawable/sout_07" android:duration="80" />
+    <item android:drawable="@drawable/sout_08" android:duration="80" />
+    <item android:drawable="@drawable/sout_09" android:duration="80" />
+    <item android:drawable="@drawable/sout_10" android:duration="80" />
+
+    <item android:drawable="@drawable/sout_10" android:duration="80" />
+    <item android:drawable="@drawable/sout_11" android:duration="80" />
+    <item android:drawable="@drawable/sout_12" android:duration="80" />
+    <item android:drawable="@drawable/sout_13" android:duration="80" />
+    <item android:drawable="@drawable/sout_14" android:duration="80" />
+
+    <item android:drawable="@drawable/sout_15" android:duration="80" />
+    <item android:drawable="@drawable/sout_16" android:duration="80" />
+    <item android:drawable="@drawable/sout_17" android:duration="80" />
+    <item android:drawable="@drawable/sout_18" android:duration="80" />
+    <item android:drawable="@drawable/sout_19" android:duration="80" />
+
+    <item android:drawable="@drawable/sout_20" android:duration="80" />
+    <item android:drawable="@drawable/sout_21" android:duration="80" />
+    <item android:drawable="@drawable/sout_22" android:duration="80" />
+    <item android:drawable="@drawable/sout_23" android:duration="80" />
+    <item android:drawable="@drawable/sout_24" android:duration="80" />
+
+    <item android:drawable="@drawable/sout_25" android:duration="80" />
+    <item android:drawable="@drawable/sout_26" android:duration="80" />
+    <item android:drawable="@drawable/sout_27" android:duration="80" />
+    <item android:drawable="@drawable/sout_28" android:duration="80" />
+    <item android:drawable="@drawable/sout_29" android:duration="80" />
+    <item android:drawable="@drawable/sout_30" android:duration="80" />
+
+    
+</animation-list>

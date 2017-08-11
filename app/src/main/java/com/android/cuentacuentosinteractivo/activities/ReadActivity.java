@@ -47,8 +47,7 @@ public abstract class ReadActivity extends FragmentActivity {
 	 * Flag que nos indica si es necesario reescalar las páginas y almacenarlas
 	 */
 	protected static boolean storageNeeded = false;
-	
-	
+
 	/**
 	 * Array con las referencias a las páginas del cuento
 	 */
@@ -59,8 +58,7 @@ public abstract class ReadActivity extends FragmentActivity {
 
     protected final static String[] pages_names = new String[] {
 
-            "page_010","page_011",
-            "page_012","page_013"
+            "page_001",
     };
 
 	/**
@@ -318,6 +316,18 @@ public abstract class ReadActivity extends FragmentActivity {
 	public static final HashMap<String, Vignette> mapaVignettes = new HashMap<>();
 	public static final HashMap<String, Page> mapaPages = new HashMap<>();
 
+	/**
+	 * Array con las referencias a las páginas del cuento
+	 */
+	public final static Integer[] framesResources = new Integer[] {
+
+			R.drawable.frames_cartman, R.drawable.frames_kenny,
+			R.drawable.frames_kyle, R.drawable.frames_wendy,
+			R.drawable.frames_sout,
+	};
+
+	public static final HashMap<Integer, Point> mapaFrames = new HashMap<>();
+
     /**
      * The pager adapter, which provides the pages to the view pager widget.
      */
@@ -556,6 +566,7 @@ public abstract class ReadActivity extends FragmentActivity {
 
         loadPages();
         loadVignettes();
+		loadFrameAnimations();
 	}
 
     /**
@@ -575,6 +586,19 @@ public abstract class ReadActivity extends FragmentActivity {
         Log.v(Constants.Log.METHOD, "ScreenSlidePagerActivity loadVignettes");
 
     }
+
+	/**
+	 * Carga las coordenadas de las viñetas
+	 */
+	private void loadFrameAnimations() {
+		Log.v(Constants.Log.METHOD, "ScreenSlidePagerActivity loadFrameAnimations");
+
+		mapaFrames.put(R.drawable.frames_cartman, new Point(400, 750));
+		mapaFrames.put(R.drawable.frames_kenny, new Point(150, 745));
+		mapaFrames.put(R.drawable.frames_kyle, new Point(600, 745));
+		mapaFrames.put(R.drawable.frames_wendy, new Point(900, 745));
+		mapaFrames.put(R.drawable.frames_sout, new Point(1000, 715));
+	}
 
     /**
      * Decodifica, escala y almacena las páginas
