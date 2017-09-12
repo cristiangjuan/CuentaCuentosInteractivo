@@ -53,12 +53,12 @@ public abstract class ReadActivity extends FragmentActivity {
 	 */
 	public final static Integer[] pages = new Integer[] {
 	    
-		R.drawable.southpark_backg_empty,
+		R.drawable.southpark_backg_empty, R.drawable.southpark_backg_empty
 	};
 
     protected final static String[] pages_names = new String[] {
 
-            "page_001",
+            "page_001", "page_002"
     };
 
 	/**
@@ -66,7 +66,7 @@ public abstract class ReadActivity extends FragmentActivity {
 	 */
 	protected final static Integer[] pages_ct = new Integer[] {
 
-			R.drawable.southpark_backg_empty,
+			R.drawable.southpark_backg_empty, R.drawable.southpark_backg_empty
 	};
 
 	/**
@@ -74,6 +74,7 @@ public abstract class ReadActivity extends FragmentActivity {
 	 */
 	protected final static Integer[] pages_times = new Integer[] {
 
+			38675, 38675
 	};
 
     /**
@@ -290,12 +291,10 @@ public abstract class ReadActivity extends FragmentActivity {
 
 	protected static int [][][][] matrizCT = {
 
-            matrizCT_001, matrizCT_002, matrizCT_003
 	};
 
 	protected static int [][][][] matrizCT_light = {
 
-            matrizCT_001_light, matrizCT_002_light, matrizCT_003_light
 	};
 
 	protected static Point [][] matrizPositionsCT = {
@@ -323,7 +322,7 @@ public abstract class ReadActivity extends FragmentActivity {
 
 			R.drawable.frames_cartman, R.drawable.frames_kenny,
 			R.drawable.frames_kyle, R.drawable.frames_wendy,
-			R.drawable.frames_sout,
+			R.drawable.frames_stan,
 	};
 
 	public static final HashMap<Integer, Point> mapaFrames = new HashMap<>();
@@ -593,11 +592,12 @@ public abstract class ReadActivity extends FragmentActivity {
 	private void loadFrameAnimations() {
 		Log.v(Constants.Log.METHOD, "ScreenSlidePagerActivity loadFrameAnimations");
 
-		mapaFrames.put(R.drawable.frames_cartman, new Point(400, 750));
-		mapaFrames.put(R.drawable.frames_kenny, new Point(150, 745));
+		mapaFrames.put(R.drawable.frames_cartman, new Point(390, 750));
+		mapaFrames.put(R.drawable.frames_kenny, new Point(170, 748));
 		mapaFrames.put(R.drawable.frames_kyle, new Point(600, 745));
-		mapaFrames.put(R.drawable.frames_wendy, new Point(900, 745));
-		mapaFrames.put(R.drawable.frames_sout, new Point(1000, 715));
+		mapaFrames.put(R.drawable.frames_wendy, new Point(-200, 900));
+		mapaFrames.put(R.drawable.frames_stan, new Point(720, 715));
+		mapaFrames.put(R.drawable.frames_hearts, new Point(780, 665));
 	}
 
     /**

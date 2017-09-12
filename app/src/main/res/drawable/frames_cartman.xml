@@ -8,43 +8,10 @@
     <item android:drawable="@drawable/cartman_02" android:duration="80" />
     <item android:drawable="@drawable/cartman_03" android:duration="80" />
     <item android:drawable="@drawable/cartman_04" android:duration="80" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="80" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="80" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="80" />
 
-    <item android:drawable="@drawable/cartman_06" android:duration="80" />
-    <item android:drawable="@drawable/cartman_07" android:duration="80" />
-    <item android:drawable="@drawable/cartman_08" android:duration="80" />
-    <item android:drawable="@drawable/cartman_09" android:duration="80" />
-    <item android:drawable="@drawable/cartman_10" android:duration="80" />
-
-    <item android:drawable="@drawable/cartman_10" android:duration="80" />
-    <item android:drawable="@drawable/cartman_11" android:duration="80" />
-    <item android:drawable="@drawable/cartman_12" android:duration="80" />
-    <item android:drawable="@drawable/cartman_13" android:duration="80" />
-    <item android:drawable="@drawable/cartman_14" android:duration="80" />
-
-    <item android:drawable="@drawable/cartman_15" android:duration="80" />
-    <item android:drawable="@drawable/cartman_16" android:duration="80" />
-    <item android:drawable="@drawable/cartman_17" android:duration="80" />
-    <item android:drawable="@drawable/cartman_18" android:duration="80" />
-    <item android:drawable="@drawable/cartman_19" android:duration="80" />
-
-    <item android:drawable="@drawable/cartman_20" android:duration="80" />
-    <item android:drawable="@drawable/cartman_21" android:duration="80" />
-    <item android:drawable="@drawable/cartman_22" android:duration="80" />
-    <item android:drawable="@drawable/cartman_23" android:duration="80" />
-    <item android:drawable="@drawable/cartman_24" android:duration="80" />
-
-    <item android:drawable="@drawable/cartman_25" android:duration="80" />
-    <item android:drawable="@drawable/cartman_26" android:duration="80" />
-    <item android:drawable="@drawable/cartman_27" android:duration="80" />
-    <item android:drawable="@drawable/cartman_28" android:duration="80" />
-    <item android:drawable="@drawable/cartman_29" android:duration="80" />
-
-    <item android:drawable="@drawable/cartman_30" android:duration="80" />
-    <item android:drawable="@drawable/cartman_31" android:duration="80" />
-    <item android:drawable="@drawable/cartman_32" android:duration="80" />
-    <item android:drawable="@drawable/cartman_33" android:duration="80" />
-    <item android:drawable="@drawable/cartman_34" android:duration="80" />
-    <item android:drawable="@drawable/cartman_35" android:duration="80" />
 
     
 </animation-list>

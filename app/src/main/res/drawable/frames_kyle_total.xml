@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frames_kyle_total"  android:oneshot="true" >
+    
+    
+    <item android:drawable="@drawable/kyle_7_s" android:duration="100" />
+    <item android:drawable="@drawable/kyle_0" android:duration="40" />
+    <item android:drawable="@drawable/kyle_1" android:duration="40" />
+    <item android:drawable="@drawable/kyle_2" android:duration="40" />
+    <item android:drawable="@drawable/kyle_3" android:duration="40" />
+    <item android:drawable="@drawable/kyle_4" android:duration="40" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="40" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="40" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="40" />
+    <item android:drawable="@drawable/kyle_0" android:duration="56" />
+    <item android:drawable="@drawable/kyle_1" android:duration="56" />
+    <item android:drawable="@drawable/kyle_2" android:duration="56" />
+    <item android:drawable="@drawable/kyle_3" android:duration="56" />
+    <item android:drawable="@drawable/kyle_4" android:duration="56" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="33" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="33" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="34" />
+    <item android:drawable="@drawable/kyle_0" android:duration="30" />
+    <item android:drawable="@drawable/kyle_1" android:duration="30" />
+    <item android:drawable="@drawable/kyle_2" android:duration="30" />
+    <item android:drawable="@drawable/kyle_3" android:duration="30" />
+    <item android:drawable="@drawable/kyle_4" android:duration="30" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_0" android:duration="40" />
+    <item android:drawable="@drawable/kyle_1" android:duration="40" />
+    <item android:drawable="@drawable/kyle_2" android:duration="40" />
+    <item android:drawable="@drawable/kyle_3" android:duration="40" />
+    <item android:drawable="@drawable/kyle_4" android:duration="40" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_0" android:duration="45" />
+    <item android:drawable="@drawable/kyle_1" android:duration="45" />
+    <item android:drawable="@drawable/kyle_2" android:duration="45" />
+    <item android:drawable="@drawable/kyle_3" android:duration="45" />
+    <item android:drawable="@drawable/kyle_4" android:duration="45" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="20" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="15" />
+    <item android:drawable="@drawable/kyle_0" android:duration="60" />
+    <item android:drawable="@drawable/kyle_1" android:duration="60" />
+    <item android:drawable="@drawable/kyle_2" android:duration="60" />
+    <item android:drawable="@drawable/kyle_3" android:duration="60" />
+    <item android:drawable="@drawable/kyle_4" android:duration="60" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="50" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="50" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="30900" />
+    <!--32850-->
+    <item android:drawable="@drawable/kyle_0" android:duration="100" />
+    <item android:drawable="@drawable/kyle_1" android:duration="100" />
+    <item android:drawable="@drawable/kyle_2" android:duration="100" />
+    <item android:drawable="@drawable/kyle_3" android:duration="100" />
+    <item android:drawable="@drawable/kyle_4" android:duration="100" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="100" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="100" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="3950" />
+    <!--37500-->
+    <item android:drawable="@drawable/kyle_0" android:duration="100" />
+    <item android:drawable="@drawable/kyle_1" android:duration="100" />
+    <item android:drawable="@drawable/kyle_2" android:duration="100" />
+    <item android:drawable="@drawable/kyle_3" android:duration="100" />
+    <item android:drawable="@drawable/kyle_4" android:duration="100" />
+    <item android:drawable="@drawable/kyle_5_s" android:duration="100" />
+    <item android:drawable="@drawable/kyle_6_s" android:duration="100" />
+    <item android:drawable="@drawable/kyle_7_s" android:duration="100" />
+    
+</animation-list>

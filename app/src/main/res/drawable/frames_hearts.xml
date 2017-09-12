@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_anim_music_off_on"  android:oneshot="false" >
+    
+    
+    <item android:drawable="@drawable/hearts_00" android:duration="70" />
+    <item android:drawable="@drawable/hearts_01" android:duration="70" />
+    <item android:drawable="@drawable/hearts_02" android:duration="70" />
+    <item android:drawable="@drawable/hearts_03" android:duration="70" />
+    <item android:drawable="@drawable/hearts_04" android:duration="70" />
+
+    <item android:drawable="@drawable/hearts_06" android:duration="70" />
+    <item android:drawable="@drawable/hearts_07" android:duration="70" />
+    <item android:drawable="@drawable/hearts_08" android:duration="70" />
+    <item android:drawable="@drawable/hearts_09" android:duration="70" />
+    <item android:drawable="@drawable/hearts_10" android:duration="70" />
+
+    <item android:drawable="@drawable/hearts_10" android:duration="70" />
+    <item android:drawable="@drawable/hearts_11" android:duration="70" />
+    <item android:drawable="@drawable/hearts_12" android:duration="70" />
+    <item android:drawable="@drawable/hearts_13" android:duration="70" />
+    <item android:drawable="@drawable/hearts_14" android:duration="70" />
+
+    <item android:drawable="@drawable/hearts_15" android:duration="70" />
+    <item android:drawable="@drawable/hearts_16" android:duration="70" />
+    <item android:drawable="@drawable/hearts_17" android:duration="70" />
+    <item android:drawable="@drawable/hearts_18" android:duration="70" />
+    <item android:drawable="@drawable/hearts_19" android:duration="70" />
+
+    <item android:drawable="@drawable/hearts_20" android:duration="70" />
+    <item android:drawable="@drawable/hearts_21" android:duration="70" />
+    <item android:drawable="@drawable/hearts_22" android:duration="70" />
+    <item android:drawable="@drawable/hearts_23" android:duration="70" />
+    <item android:drawable="@drawable/hearts_24" android:duration="70" />
+
+    <item android:drawable="@drawable/hearts_25" android:duration="70" />
+    <item android:drawable="@drawable/hearts_26" android:duration="70" />
+    <item android:drawable="@drawable/hearts_27" android:duration="70" />
+    <item android:drawable="@drawable/hearts_28" android:duration="70" />
+    <item android:drawable="@drawable/hearts_29" android:duration="70" />
+    <item android:drawable="@drawable/hearts_30" android:duration="70" />
+
+</animation-list>

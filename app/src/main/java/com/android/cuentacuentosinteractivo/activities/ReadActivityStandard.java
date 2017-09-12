@@ -8,7 +8,9 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewOutlineProvider;
@@ -29,12 +31,15 @@ import android.widget.TextView;
 
 
 import com.android.cuentacuentosinteractivo.R;
+import com.android.cuentacuentosinteractivo.customs.CustomActionDrawable;
 import com.android.cuentacuentosinteractivo.customs.CustomPagerAdapter;
 import com.android.cuentacuentosinteractivo.customs.CustomViewPagerStandard;
 import com.android.cuentacuentosinteractivo.utils.Constants;
 import com.android.cuentacuentosinteractivo.utils.MusicManager;
 import com.android.cuentacuentosinteractivo.utils.UtilsCustom;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -172,6 +177,19 @@ public class ReadActivityStandard extends ReadActivity {
      * Esconde el botón de ajustes close
      */
     private AnimationSet showAjustesClose;
+
+    private final ArrayList<CustomActionDrawable> arrayActions =
+            new ArrayList<CustomActionDrawable>();
+
+    private AnimationDrawable kyleFrames;
+    private AnimationDrawable stanFrames;
+    private AnimationDrawable heartsFrames;
+    private AnimationDrawable cartmanFrames;
+    private AnimationDrawable wendyFrames;
+    private AnimationDrawable kennyFrames;
+    private AnimationDrawable stanVomFrames;
+    private ImageView wendyView;
+    private ImageView stanView;
 
     /**
      * Indica si estamos en el estado fin de página
@@ -4066,7 +4084,10 @@ public class ReadActivityStandard extends ReadActivity {
                     setMusicIconOff();
                     music_btn.setBackground(getResources().getDrawable(R.drawable.ripple_purple_btn_disabled, null));
                 }
-                testFrameAnimations();
+                //testFrameAnimations();
+                //prepareCustomFrameAnimations();
+                prepareFrameAnimations();
+                prepareTouchAnimations();
 
                 unlockButtons();
                 unlockTap();
@@ -4081,6 +4102,411 @@ public class ReadActivityStandard extends ReadActivity {
         anim.setInterpolator((PathInterpolator) (AnimationUtils.loadInterpolator(
                 getApplicationContext(), android.R.interpolator.fast_out_slow_in)));
         anim.start();
+    }
+
+    private void prepareFrameAnimations(){
+
+        ImageView kyleView = new ImageView(mContext);
+
+        kyleFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kyle_total, mContext);
+        kyleView.setImageDrawable(kyleFrames);
+
+        FrameLayout.LayoutParams positionParamsKyle = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsKyle.leftMargin = mapaFrames.get(R.drawable.frames_kyle).x;
+        positionParamsKyle.topMargin = mapaFrames.get(R.drawable.frames_kyle).y;
+        mainLayout.addView(kyleView, positionParamsKyle);
+
+        stanView = new ImageView(mContext);
+
+        stanFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_stan_total, mContext);
+        stanView.setImageDrawable(stanFrames);
+
+        FrameLayout.LayoutParams positionParamsStan = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsStan.leftMargin = mapaFrames.get(R.drawable.frames_stan).x;
+        positionParamsStan.topMargin = mapaFrames.get(R.drawable.frames_stan).y;
+        mainLayout.addView(stanView, positionParamsStan);
+
+        ImageView heartsView = new ImageView(mContext);
+
+        heartsFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_hearts_total, mContext);
+        heartsView.setImageDrawable(heartsFrames);
+
+        FrameLayout.LayoutParams positionParamsHearts = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsHearts.leftMargin = mapaFrames.get(R.drawable.frames_hearts).x;
+        positionParamsHearts.topMargin = mapaFrames.get(R.drawable.frames_hearts).y;
+        mainLayout.addView(heartsView, positionParamsHearts);
+
+        ImageView cartmanView = new ImageView(mContext);
+
+        cartmanFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_cartman_total, mContext);
+        cartmanView.setImageDrawable(cartmanFrames);
+
+        FrameLayout.LayoutParams positionParamsCartman = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsCartman.leftMargin = mapaFrames.get(R.drawable.frames_cartman).x;
+        positionParamsCartman.topMargin = mapaFrames.get(R.drawable.frames_cartman).y;
+        mainLayout.addView(cartmanView, positionParamsCartman);
+
+        ImageView kennyView = new ImageView(mContext);
+
+        kennyFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kenny_total, mContext);
+        kennyView.setImageDrawable(kennyFrames);
+
+        FrameLayout.LayoutParams positionParamsKenny = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsKenny.leftMargin = mapaFrames.get(R.drawable.frames_kenny).x;
+        positionParamsKenny.topMargin = mapaFrames.get(R.drawable.frames_kenny).y;
+        mainLayout.addView(kennyView, positionParamsKenny);
+
+        wendyView = new ImageView(mContext);
+
+        wendyFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_wendy_total, mContext);
+        wendyView.setImageDrawable(wendyFrames);
+
+        FrameLayout.LayoutParams positionParamsWendy = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsWendy.leftMargin = mapaFrames.get(R.drawable.frames_wendy).x;
+        positionParamsWendy.topMargin = mapaFrames.get(R.drawable.frames_wendy).y;
+        mainLayout.addView(wendyView, positionParamsWendy);
+
+    }
+
+    public void startFrameAnimations(){
+
+        kyleFrames.start();
+        stanFrames.start();
+        heartsFrames.start();
+        wendyFrames.start();
+        cartmanFrames.start();
+        kennyFrames.start();
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                //17120 - 35%
+                TranslateAnimation transAnimHoriz = new TranslateAnimation(0,910,0,0);
+                transAnimHoriz.setDuration(11128);
+                transAnimHoriz.setFillAfter(true );
+                transAnimHoriz.setInterpolator(
+                        AnimationUtils.loadInterpolator(mContext, android.R.interpolator.linear));
+                transAnimHoriz.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+
+                        //Fix absurdo. Evita flick en el botón al cambiar su posición con setLayoutParams dentro de onAnimationEnd
+                        animation = new TranslateAnimation(0.0f, 0.0f, 0.0f, 0.0f);
+                        animation.setDuration(1);
+                        wendyView.startAnimation(animation);
+
+                        TranslateAnimation transAnimVert = new TranslateAnimation(0,490,0,-150);
+                        transAnimVert.setDuration(5992);
+                        transAnimVert.setFillAfter(true);
+                        transAnimVert.setInterpolator(
+                                AnimationUtils.loadInterpolator(mContext, android.R.interpolator.linear));
+                        transAnimVert.setAnimationListener(new Animation.AnimationListener() {
+                            @Override
+                            public void onAnimationStart(Animation animation) {
+
+                            }
+
+                            @Override
+                            public void onAnimationEnd(Animation animation) {
+
+                                //Fix absurdo. Evita flick en el botón al cambiar su posición con setLayoutParams dentro de onAnimationEnd
+                                animation = new TranslateAnimation(0.0f, 0.0f, 0.0f, 0.0f);
+                                animation.setDuration(1);
+                                wendyView.startAnimation(animation);
+
+                                FrameLayout.LayoutParams positionParamsWendy = new FrameLayout.LayoutParams(
+                                        FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+                                positionParamsWendy.leftMargin = 1200;
+                                positionParamsWendy.topMargin = 750;
+                                wendyView.setLayoutParams(positionParamsWendy);
+                            }
+
+                            @Override
+                            public void onAnimationRepeat(Animation animation) {
+
+                            }
+                        });
+                        FrameLayout.LayoutParams positionParamsWendy = new FrameLayout.LayoutParams(
+                                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+                        positionParamsWendy.leftMargin = 710;
+                        positionParamsWendy.topMargin = 900;
+                        wendyView.setLayoutParams(positionParamsWendy);
+
+                        wendyView.startAnimation(transAnimVert);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                wendyView.startAnimation(transAnimHoriz);
+            }
+        }, 2300);
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                TranslateAnimation transAnim = new TranslateAnimation(0,-240,0,0);
+                transAnim.setDuration(1000);
+                transAnim.setFillAfter(true);
+                transAnim.setInterpolator(
+                        AnimationUtils.loadInterpolator(mContext, android.R.interpolator.linear));
+                transAnim.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+
+                        //Fix absurdo. Evita flick en el botón al cambiar su posición con setLayoutParams dentro de onAnimationEnd
+                        animation = new TranslateAnimation(0.0f, 0.0f, 0.0f, 0.0f);
+                        animation.setDuration(1);
+                        wendyView.startAnimation(animation);
+
+                        FrameLayout.LayoutParams positionParamsWendy = new FrameLayout.LayoutParams(
+                                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+                        positionParamsWendy.leftMargin = 960;
+                        positionParamsWendy.topMargin = 750;
+                        wendyView.setLayoutParams(positionParamsWendy);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+
+                    }
+                });
+                wendyView.startAnimation(transAnim);
+            }
+        },31920);
+
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+                TranslateAnimation transAnim = new TranslateAnimation(0,240,0,0);
+                transAnim.setDuration(1000);
+                transAnim.setFillAfter(true);
+                transAnim.setInterpolator(
+                        AnimationUtils.loadInterpolator(mContext, android.R.interpolator.linear));
+                wendyView.startAnimation(transAnim);
+            }
+        },37500);
+    }
+
+    private void prepareTouchAnimations(){
+
+        stanVomFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_stan_vom, mContext);
+
+        stanView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                stanVomFrames.stop();
+                stanView.setImageDrawable(stanVomFrames);
+                stanVomFrames.start();
+
+                return true;
+            }
+        });
+    }
+
+    private void prepareCustomFrameAnimations() {
+
+        //Test frameAnimation
+        ImageView cartmanView = new ImageView(mContext);
+
+        TransitionDrawable cartmanTransition;
+        cartmanTransition = (TransitionDrawable) UtilsCustom.getDrawable(R.drawable.transition_cartman_anim, mContext);
+        cartmanTransition.setCrossFadeEnabled(true);
+        AnimationDrawable cartmanFrames;
+        cartmanFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_cartman, mContext);
+
+        cartmanView.setImageDrawable(cartmanTransition);
+
+        FrameLayout.LayoutParams positionParams = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParams.leftMargin = mapaFrames.get(R.drawable.frames_cartman).x;
+        positionParams.topMargin = mapaFrames.get(R.drawable.frames_cartman).y;
+
+        mainLayout.addView(cartmanView, positionParams);
+
+        //Test frameAnimation
+        ImageView kennyView = new ImageView(mContext);
+
+        TransitionDrawable kennyTransition;
+        kennyTransition = (TransitionDrawable) UtilsCustom.getDrawable(R.drawable.transition_kenny_anim, mContext);
+        kennyTransition.setCrossFadeEnabled(true);
+        AnimationDrawable kennyFrames;
+        kennyFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kenny, mContext);
+        kennyView.setImageDrawable(kennyTransition);
+
+        FrameLayout.LayoutParams positionParamsKenny = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsKenny.leftMargin = mapaFrames.get(R.drawable.frames_kenny).x;
+        positionParamsKenny.topMargin = mapaFrames.get(R.drawable.frames_kenny).y;
+        mainLayout.addView(kennyView, positionParamsKenny);
+
+        //Test frameAnimation
+        ImageView kyleView = new ImageView(mContext);
+
+        TransitionDrawable kyleTransition;
+        kyleTransition = (TransitionDrawable) UtilsCustom.getDrawable(R.drawable.transition_kyle_anim, mContext);
+        kyleTransition.setCrossFadeEnabled(true);
+        AnimationDrawable kyleFrames;
+        kyleFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kyle, mContext);
+        kyleView.setImageDrawable(kyleTransition);
+
+        FrameLayout.LayoutParams positionParamsKyle = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsKyle.leftMargin = mapaFrames.get(R.drawable.frames_kyle).x;
+        positionParamsKyle.topMargin = mapaFrames.get(R.drawable.frames_kyle).y;
+        mainLayout.addView(kyleView, positionParamsKyle);
+
+        //Test frameAnimation
+        ImageView wendyView = new ImageView(mContext);
+
+        TransitionDrawable wendyTransition;
+        wendyTransition = (TransitionDrawable) UtilsCustom.getDrawable(R.drawable.transition_wendy_anim, mContext);
+        wendyTransition.setCrossFadeEnabled(true);
+        AnimationDrawable wendyFrames;
+        wendyFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_wendy, mContext);
+        wendyView.setImageDrawable(wendyTransition);
+
+        FrameLayout.LayoutParams positionParamsWendy = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsWendy.leftMargin = mapaFrames.get(R.drawable.frames_wendy).x;
+        positionParamsWendy.topMargin = mapaFrames.get(R.drawable.frames_wendy).y;
+        mainLayout.addView(wendyView, positionParamsWendy);
+
+        ImageView stanView = new ImageView(mContext);
+
+        TransitionDrawable stanTransition;
+        stanTransition = (TransitionDrawable) UtilsCustom.getDrawable(R.drawable.transition_stan_anim, mContext);
+        stanTransition.setCrossFadeEnabled(true);
+        AnimationDrawable stanFrames;
+        stanFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_stan, mContext);
+        AnimationDrawable stanVom;
+        stanVom = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_stan_vom, mContext);
+        stanView.setImageDrawable(stanTransition);
+
+        FrameLayout.LayoutParams positionParamsSout = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsSout.leftMargin = mapaFrames.get(R.drawable.frames_stan).x;
+        positionParamsSout.topMargin = mapaFrames.get(R.drawable.frames_stan).y;
+        mainLayout.addView(stanView, positionParamsSout);
+
+        ImageView heartsView = new ImageView(mContext);
+
+        TransitionDrawable heartsTransition;
+        heartsTransition = (TransitionDrawable) UtilsCustom.getDrawable(R.drawable.transition_hearts_anim, mContext);
+        heartsTransition.setCrossFadeEnabled(true);
+        AnimationDrawable heartsFrames;
+        heartsFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_hearts, mContext);
+        heartsView.setImageDrawable(heartsTransition);
+
+        FrameLayout.LayoutParams positionParamsHearts = new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        positionParamsHearts.leftMargin = mapaFrames.get(R.drawable.frames_hearts).x;
+        positionParamsHearts.topMargin = mapaFrames.get(R.drawable.frames_hearts).y;
+        mainLayout.addView(heartsView, positionParamsHearts);
+
+        arrayActions.add(
+                new CustomActionDrawable(kyleTransition, 1900, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 600, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(null, 1400, Constants.Actions.SILENT, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 200, Constants.Actions.STATIC, 0));
+        arrayActions.add(
+                new CustomActionDrawable(heartsTransition, 200, Constants.Actions.STATIC, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 16000, Constants.Actions.SIMUL, 1));
+        arrayActions.add(
+                new CustomActionDrawable(heartsTransition, 16000, Constants.Actions.SIMUL, 1));
+        arrayActions.add(
+                new CustomActionDrawable(wendyTransition, 16000, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 200, Constants.Actions.STATIC, 1));
+        arrayActions.add(
+                new CustomActionDrawable(heartsTransition, 200, Constants.Actions.STATIC, 1));
+        arrayActions.add(
+                new CustomActionDrawable(cartmanTransition, 4200, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 1800, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(cartmanTransition, 4700, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 600, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(null, 700, Constants.Actions.SILENT, 0));
+        arrayActions.add(
+                new CustomActionDrawable(wendyTransition, 900, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(kennyTransition, 700, Constants.Actions.SIMUL, 0));
+        arrayActions.add(
+                new CustomActionDrawable(cartmanTransition, 700, Constants.Actions.SIMUL, 0));
+        arrayActions.add(
+                new CustomActionDrawable(kyleTransition, 700, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(null, 400, Constants.Actions.SILENT, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 200, Constants.Actions.STATIC, 0));
+        arrayActions.add(
+                new CustomActionDrawable(wendyTransition, 2100, Constants.Actions.ANIM, 0));
+        arrayActions.add(
+                new CustomActionDrawable(stanTransition, 500, Constants.Actions.ANIM, 1));
+        arrayActions.add(
+                new CustomActionDrawable(null, 900, Constants.Actions.SILENT, 0));
+        arrayActions.add(
+                new CustomActionDrawable(kennyTransition, 1000, Constants.Actions.SIMUL, 0));
+        arrayActions.add(
+                new CustomActionDrawable(cartmanTransition, 1000, Constants.Actions.SIMUL, 0));
+        arrayActions.add(
+                new CustomActionDrawable(kyleTransition, 1000, Constants.Actions.ANIM, 0));
+
+        /*
+        TransitionDrawable stanTransition;
+        stanTransition = (TransitionDrawable) UtilsCustom.getDrawable(R.drawable.transition_stan_anim, mContext);
+
+        stanView.setImageDrawable(stanTransition);
+        stanTransition.startTransition(200);
+        */
+    }
+
+
+    public void startCustomFrameAnimations() {
+
+        Iterator<CustomActionDrawable> iterator = arrayActions.iterator();
+
+        Handler handler = new Handler();
+        int startTime = 0;
+
+        while (iterator.hasNext()){
+
+            CustomActionDrawable frameAnim = iterator.next();
+
+            handler.postDelayed(frameAnim, startTime);
+            if (!frameAnim.isSimul())
+                startTime += frameAnim.getDuration();
+        }
     }
 
     private void testFrameAnimations() {
@@ -4149,13 +4575,13 @@ public class ReadActivityStandard extends ReadActivity {
         ImageView soutView = new ImageView(mContext);
         AnimationDrawable soutFrames;
 
-        soutFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_sout, mContext);
+        soutFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_stan, mContext);
         soutView.setImageDrawable(soutFrames);
 
         FrameLayout.LayoutParams positionParamsSout = new FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
-        positionParamsSout.leftMargin = mapaFrames.get(R.drawable.frames_sout).x;
-        positionParamsSout.topMargin = mapaFrames.get(R.drawable.frames_sout).y;
+        positionParamsSout.leftMargin = mapaFrames.get(R.drawable.frames_stan).x;
+        positionParamsSout.topMargin = mapaFrames.get(R.drawable.frames_stan).y;
 
         mainLayout.addView(soutView, positionParamsSout);
         soutFrames.start();

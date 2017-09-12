@@ -112,7 +112,7 @@ public class ReadFragment extends Fragment {
         
         if (ReadActivity.class.isInstance(getActivity())){
 
-          mode = Constants.MODE_HIGHLIGHT;
+          mode = Constants.MODE_NO_HIGHLIGHT;
 
         	//Según la actividad cargamos el tipo de imagen: Con o sin cuadros de texto (Autoplay)
         	if (mode == Constants.MODE_HIGHLIGHT) {
@@ -268,6 +268,9 @@ public class ReadFragment extends Fragment {
 
             //Empezamos o resumimos la voz
             MusicManager.startResumeVoice();
+
+            //((ReadActivityStandard) getActivity()).startCustomFrameAnimations();
+            ((ReadActivityStandard) getActivity()).startFrameAnimations();
         }
 
 	}

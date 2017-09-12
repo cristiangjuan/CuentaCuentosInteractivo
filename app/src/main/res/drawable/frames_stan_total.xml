@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frames_stan_total"  android:oneshot="true" >
+    
+    
+    <item android:drawable="@drawable/sout_00" android:duration="1800" />
+    <item android:drawable="@drawable/stan_love_00" android:duration="38" />
+    <item android:drawable="@drawable/stan_love_01" android:duration="38" />
+    <item android:drawable="@drawable/stan_love_02" android:duration="38" />
+    <item android:drawable="@drawable/stan_love_03" android:duration="38" />
+    <item android:drawable="@drawable/stan_love_04" android:duration="37" />
+    <item android:drawable="@drawable/stan_love_05" android:duration="37" />
+    <item android:drawable="@drawable/stan_love_06" android:duration="37" />
+    <item android:drawable="@drawable/stan_love_07" android:duration="37" />
+    <item android:drawable="@drawable/sout_00" android:duration="50" />
+    <item android:drawable="@drawable/sout_01" android:duration="50" />
+    <item android:drawable="@drawable/sout_02" android:duration="50" />
+    <item android:drawable="@drawable/sout_03" android:duration="50" />
+    <item android:drawable="@drawable/sout_04" android:duration="50" />
+    <item android:drawable="@drawable/sout_05" android:duration="50" />
+    <item android:drawable="@drawable/sout_06" android:duration="50" />
+    <item android:drawable="@drawable/sout_07" android:duration="50" />
+    <!--2500-->
+    <item android:drawable="@drawable/stan_love_00_s" android:duration="17500" />
+    <!--20000-->
+    <item android:drawable="@drawable/sout_00" android:duration="4150" />
+    <!--24150-->
+    <item android:drawable="@drawable/stan_angry_00" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_01" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_02" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_03" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_04" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_05" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_06" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_07" android:duration="70" />
+    <!--24500-->
+    <item android:drawable="@drawable/stan_angry_00" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_01" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_02" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_03" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_04" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_05" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_06" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_07" android:duration="40" />
+    <!--24750-->
+    <item android:drawable="@drawable/stan_angry_00" android:duration="70" />
+    <item android:drawable="@drawable/stan_angry_01" android:duration="70" />
+    <item android:drawable="@drawable/stan_angry_02" android:duration="70" />
+    <item android:drawable="@drawable/stan_angry_03" android:duration="70" />
+    <item android:drawable="@drawable/stan_angry_04" android:duration="70" />
+    <item android:drawable="@drawable/stan_angry_05" android:duration="70" />
+    <item android:drawable="@drawable/stan_angry_06" android:duration="70" />
+    <item android:drawable="@drawable/stan_angry_07" android:duration="60" />
+    <!--25300-->
+    <item android:drawable="@drawable/stan_angry_00" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_01" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_02" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_03" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_04" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_05" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_06" android:duration="30" />
+    <item android:drawable="@drawable/stan_angry_07" android:duration="40" />
+    <!--25550-->
+    <item android:drawable="@drawable/stan_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/stan_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/stan_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/stan_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/stan_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/stan_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/stan_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/stan_angry_07" android:duration="4750" />
+    <!--30650-->
+    <item android:drawable="@drawable/stan_angry_00" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_01" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_02" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_03" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_04" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_05" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_06" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_07" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_00" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_01" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_02" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_03" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_04" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_05" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_06" android:duration="40" />
+    <item android:drawable="@drawable/stan_angry_07" android:duration="800" />
+    <!--32050-->
+    <item android:drawable="@drawable/stan_love_07_s" android:duration="4050" />
+    <!--36230-->
+    <item android:drawable="@drawable/stan_vom_01" android:duration="200" />
+    <item android:drawable="@drawable/stan_vom_02" android:duration="200" />
+    <item android:drawable="@drawable/stan_vom_03" android:duration="200" />
+    <item android:drawable="@drawable/stan_vom_04" android:duration="200" />
+    <item android:drawable="@drawable/stan_vom_05" android:duration="200" />
+
+</animation-list>

@@ -11,6 +11,7 @@
 
     <item android:drawable="@drawable/sout_06" android:duration="80" />
     <item android:drawable="@drawable/sout_07" android:duration="80" />
+    <!--
     <item android:drawable="@drawable/sout_08" android:duration="80" />
     <item android:drawable="@drawable/sout_09" android:duration="80" />
     <item android:drawable="@drawable/sout_10" android:duration="80" />
@@ -40,5 +41,5 @@
     <item android:drawable="@drawable/sout_29" android:duration="80" />
     <item android:drawable="@drawable/sout_30" android:duration="80" />
 
-    
+    -->
 </animation-list>

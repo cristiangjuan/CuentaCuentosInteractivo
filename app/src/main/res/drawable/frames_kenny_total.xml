@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frames_kenny_total"  android:oneshot="true" >
+
+
+    <item android:drawable="@drawable/kenny_0" android:duration="32850" />
+    <item android:drawable="@drawable/kenny_1" android:duration="80" />
+    <item android:drawable="@drawable/kenny_2" android:duration="80" />
+    <item android:drawable="@drawable/kenny_3" android:duration="80" />
+    <item android:drawable="@drawable/kenny_4" android:duration="80" />
+    <item android:drawable="@drawable/kenny_5" android:duration="80" />
+    <!--33250-->
+    <item android:drawable="@drawable/kenny_0" android:duration="4250" />
+    <!--37500-->
+    <item android:drawable="@drawable/kenny_1" android:duration="80" />
+    <item android:drawable="@drawable/kenny_2" android:duration="80" />
+    <item android:drawable="@drawable/kenny_3" android:duration="80" />
+    <item android:drawable="@drawable/kenny_4" android:duration="80" />
+    <item android:drawable="@drawable/kenny_5" android:duration="80" />
+    <item android:drawable="@drawable/kenny_0" android:duration="80" />
+    <item android:drawable="@drawable/kenny_1" android:duration="80" />
+    <item android:drawable="@drawable/kenny_2" android:duration="80" />
+    <item android:drawable="@drawable/kenny_3" android:duration="80" />
+    <item android:drawable="@drawable/kenny_4" android:duration="80" />
+
+    
+</animation-list>

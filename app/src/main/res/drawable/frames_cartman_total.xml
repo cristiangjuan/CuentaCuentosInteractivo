@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frames_kyle_total"  android:oneshot="true" >
+
+
+    <item android:drawable="@drawable/cartman_06_s" android:duration="19920" />
+    <item android:drawable="@drawable/cartman_00" android:duration="30" />
+    <item android:drawable="@drawable/cartman_01" android:duration="30" />
+    <item android:drawable="@drawable/cartman_02" android:duration="30" />
+    <item android:drawable="@drawable/cartman_03" android:duration="30" />
+    <item android:drawable="@drawable/cartman_04" android:duration="30" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="30" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="100" />
+
+    <!--20200-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="40" />
+    <item android:drawable="@drawable/cartman_01" android:duration="40" />
+    <item android:drawable="@drawable/cartman_02" android:duration="40" />
+    <item android:drawable="@drawable/cartman_03" android:duration="40" />
+    <item android:drawable="@drawable/cartman_04" android:duration="40" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="40" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="60" />
+
+    <!--20500-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="70" />
+    <item android:drawable="@drawable/cartman_01" android:duration="70" />
+    <item android:drawable="@drawable/cartman_02" android:duration="70" />
+    <item android:drawable="@drawable/cartman_03" android:duration="70" />
+    <item android:drawable="@drawable/cartman_04" android:duration="70" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="70" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="80" />
+
+    <!--21000-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="30" />
+    <item android:drawable="@drawable/cartman_01" android:duration="30" />
+    <item android:drawable="@drawable/cartman_02" android:duration="30" />
+    <item android:drawable="@drawable/cartman_03" android:duration="30" />
+    <item android:drawable="@drawable/cartman_04" android:duration="30" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="30" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="40" />
+
+    <!--21220-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="120" />
+    <item android:drawable="@drawable/cartman_01" android:duration="120" />
+    <item android:drawable="@drawable/cartman_02" android:duration="120" />
+    <item android:drawable="@drawable/cartman_03" android:duration="120" />
+    <item android:drawable="@drawable/cartman_04" android:duration="120" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="120" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="60" />
+
+    <!--22000-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="30" />
+    <item android:drawable="@drawable/cartman_01" android:duration="30" />
+    <item android:drawable="@drawable/cartman_02" android:duration="30" />
+    <item android:drawable="@drawable/cartman_03" android:duration="30" />
+    <item android:drawable="@drawable/cartman_04" android:duration="30" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="30" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="70" />
+
+    <!--22250-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="70" />
+    <item android:drawable="@drawable/cartman_01" android:duration="70" />
+    <item android:drawable="@drawable/cartman_02" android:duration="70" />
+    <item android:drawable="@drawable/cartman_03" android:duration="70" />
+    <item android:drawable="@drawable/cartman_04" android:duration="70" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="70" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="80" />
+
+    <!--22750-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="70" />
+    <item android:drawable="@drawable/cartman_01" android:duration="70" />
+    <item android:drawable="@drawable/cartman_02" android:duration="70" />
+    <item android:drawable="@drawable/cartman_03" android:duration="70" />
+    <item android:drawable="@drawable/cartman_04" android:duration="70" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="70" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="80" />
+
+    <!--23250-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="70" />
+    <item android:drawable="@drawable/cartman_01" android:duration="70" />
+    <item android:drawable="@drawable/cartman_02" android:duration="70" />
+    <item android:drawable="@drawable/cartman_03" android:duration="70" />
+    <item android:drawable="@drawable/cartman_04" android:duration="70" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="70" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="80" />
+
+    <!--23750-->
+
+    <item android:drawable="@drawable/cartman_00" android:duration="40" />
+    <item android:drawable="@drawable/cartman_01" android:duration="40" />
+    <item android:drawable="@drawable/cartman_02" android:duration="40" />
+    <item android:drawable="@drawable/cartman_03" android:duration="40" />
+    <item android:drawable="@drawable/cartman_04" android:duration="40" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="40" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="1960" />
+
+    <!--25950-->
+
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="40" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="35" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="35" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="35" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="35" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="300" />
+
+    <!--27150-->
+
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="150" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="150" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="150" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="150" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="150" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="150" />
+    <item android:drawable="@drawable/cartman_angry_00" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_01" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_02" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_03" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_04" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_05" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_06" android:duration="50" />
+    <item android:drawable="@drawable/cartman_angry_07" android:duration="2350" />
+    <!--32850-->
+    <item android:drawable="@drawable/cartman_00" android:duration="115" />
+    <item android:drawable="@drawable/cartman_01" android:duration="115" />
+    <item android:drawable="@drawable/cartman_02" android:duration="115" />
+    <item android:drawable="@drawable/cartman_03" android:duration="115" />
+    <item android:drawable="@drawable/cartman_04" android:duration="115" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="115" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="3960" />
+    <!--37500-->
+    <item android:drawable="@drawable/cartman_00" android:duration="115" />
+    <item android:drawable="@drawable/cartman_01" android:duration="115" />
+    <item android:drawable="@drawable/cartman_02" android:duration="115" />
+    <item android:drawable="@drawable/cartman_03" android:duration="115" />
+    <item android:drawable="@drawable/cartman_04" android:duration="115" />
+    <item android:drawable="@drawable/cartman_05_s" android:duration="115" />
+    <item android:drawable="@drawable/cartman_06_s" android:duration="115" />
+
+
+
+</animation-list>

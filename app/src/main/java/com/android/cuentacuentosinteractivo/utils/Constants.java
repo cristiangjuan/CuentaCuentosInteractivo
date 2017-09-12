@@ -34,6 +34,14 @@ public class Constants {
 		public static final String AUDIO = "Audi";
 		public static final String MEMORY = "Memr";
 	}
+
+	public class Actions {
+
+		public static final int ANIM = 0;
+		public static final int SILENT = 1;
+		public static final int STATIC = 2;
+		public static final int SIMUL = 3;
+	}
 	
 	/**
 	 * @author quayo
