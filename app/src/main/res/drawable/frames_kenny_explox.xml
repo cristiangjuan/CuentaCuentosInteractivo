@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_kenny_explox"  android:oneshot="true" >
+
+
+    <item android:drawable="@drawable/kenny_0_explox" android:duration="200" />
+    <item android:drawable="@drawable/kenny_1_explox" android:duration="200" />
+    <item android:drawable="@drawable/kenny_2_explox" android:duration="200" />
+    <item android:drawable="@drawable/kenny_3_explox" android:duration="200" />
+    <item android:drawable="@drawable/kenny_4_explox" android:duration="200" />
+
+    
+</animation-list>

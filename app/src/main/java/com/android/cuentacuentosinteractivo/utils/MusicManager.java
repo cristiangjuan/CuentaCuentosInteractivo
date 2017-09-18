@@ -26,6 +26,10 @@ public class MusicManager {
     private static float currVolumeMusic = Constants.Audio.MAX_MUSIC_LIMITED;
     private static float currVolumeVoice = Constants.Audio.MAX_VOICE_LIMITED;
     private static CountDownTimer fadeMusicTimer;
+
+    private static MediaPlayer mediaPlayerKenny;
+    private static MediaPlayer mediaPlayerCartman;
+    private static MediaPlayer mediaPlayerStan;
     /**
      * página en la que se encuentra el autoplay
      */
@@ -122,6 +126,64 @@ public class MusicManager {
                 }
             }
         };
+    }
+
+    public static void createMusicSouthPark() {
+
+        Log.v(Constants.Log.AUDIO, "MusicManager - createMusicSouthPark");
+
+        if (mediaPlayerKenny != null) {
+            mediaPlayerKenny.release();
+            mediaPlayerKenny = null;
+        }
+        if (mediaPlayerCartman != null) {
+            mediaPlayerCartman.release();
+            mediaPlayerCartman = null;
+        }
+        if (mediaPlayerStan != null) {
+            mediaPlayerStan.release();
+            mediaPlayerStan = null;
+        }
+
+        mediaPlayerKenny = MediaPlayer.create(mContext, R.raw.audio_southpark_kenny_explox);
+        mediaPlayerCartman = MediaPlayer.create(mContext, R.raw.audio_southpark_cartman_fart);
+        mediaPlayerStan = MediaPlayer.create(mContext, R.raw.audio_southpark_stan_vom);
+
+        currVolumeMusic = Constants.Audio.MAX_MUSIC_LIMITED;
+
+        float log1 = (float) (Math.log((float)Constants.Audio.MAX_MUSIC- currVolumeMusic) / Math.log(Constants.Audio.MAX_MUSIC));
+        Log.v(Constants.Log.AUDIO, "currVolumeMusic = " + currVolumeMusic + " log1 = " + log1);
+        if (mediaPlayerKenny != null) mediaPlayerKenny.setVolume(1 - log1, 1 - log1);
+        if (mediaPlayerCartman != null) mediaPlayerCartman.setVolume(1 - log1, 1 - log1);
+        if (mediaPlayerStan != null) mediaPlayerStan.setVolume(1 - log1, 1 - log1);
+    }
+
+    public static void startResumeMusic(int character) {
+
+        Log.v(Constants.Log.AUDIO, "MusicManager - startResumeMusic");
+
+        switch (character) {
+
+            case Constants.SouthPark.KENNY: {
+
+                if ((mediaPlayerKenny != null) && (!mediaPlayerKenny.isPlaying()))
+                    mediaPlayerKenny.start();
+                break;
+            }
+            case Constants.SouthPark.CARTMAN: {
+
+                if ((mediaPlayerCartman != null) && (!mediaPlayerCartman.isPlaying()))
+                    mediaPlayerCartman.start();
+                break;
+            }
+            case Constants.SouthPark.STAN: {
+
+                if ((mediaPlayerStan != null) && (!mediaPlayerStan.isPlaying()))
+                    mediaPlayerStan.start();
+                break;
+            }
+        }
+
     }
 
     public static void createMusicRestart(boolean intro) {

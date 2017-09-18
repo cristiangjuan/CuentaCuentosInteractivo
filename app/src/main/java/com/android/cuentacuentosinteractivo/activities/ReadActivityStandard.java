@@ -188,8 +188,15 @@ public class ReadActivityStandard extends ReadActivity {
     private AnimationDrawable wendyFrames;
     private AnimationDrawable kennyFrames;
     private AnimationDrawable stanVomFrames;
+    private AnimationDrawable kennyExploxFrames;
+    private AnimationDrawable cartmanFartFrames;
+    private AnimationDrawable kyleAngryFrames;
+    private AnimationDrawable wendyShortFrames;
     private ImageView wendyView;
     private ImageView stanView;
+    private ImageView kennyView;
+    private ImageView cartmanView;
+    private ImageView kyleView;
 
     /**
      * Indica si estamos en el estado fin de página
@@ -710,7 +717,7 @@ public class ReadActivityStandard extends ReadActivity {
 
                         mPager.resumeTimer();
                         //Resumimos la música
-                        MusicManager.startResumeMusic();
+                        //MusicManager.startResumeMusic();
                         //Renovamos el tiempo que están visibles los controles
                         planificarDesvanecimientoControles(true);
 
@@ -1338,7 +1345,7 @@ public class ReadActivityStandard extends ReadActivity {
                 progressBar.setVisibility(View.VISIBLE);
 
                 //Resumimos la música
-                MusicManager.startResumeMusic();
+                //MusicManager.startResumeMusic();
                 //Animación como si hubiéramos hecho click
                 startClickPlayAnimations();
                 //Renovamos el tiempo que están visibles los controles
@@ -4106,7 +4113,7 @@ public class ReadActivityStandard extends ReadActivity {
 
     private void prepareFrameAnimations(){
 
-        ImageView kyleView = new ImageView(mContext);
+        kyleView = new ImageView(mContext);
 
         kyleFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kyle_total, mContext);
         kyleView.setImageDrawable(kyleFrames);
@@ -4139,7 +4146,7 @@ public class ReadActivityStandard extends ReadActivity {
         positionParamsHearts.topMargin = mapaFrames.get(R.drawable.frames_hearts).y;
         mainLayout.addView(heartsView, positionParamsHearts);
 
-        ImageView cartmanView = new ImageView(mContext);
+        cartmanView = new ImageView(mContext);
 
         cartmanFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_cartman_total, mContext);
         cartmanView.setImageDrawable(cartmanFrames);
@@ -4150,7 +4157,7 @@ public class ReadActivityStandard extends ReadActivity {
         positionParamsCartman.topMargin = mapaFrames.get(R.drawable.frames_cartman).y;
         mainLayout.addView(cartmanView, positionParamsCartman);
 
-        ImageView kennyView = new ImageView(mContext);
+        kennyView = new ImageView(mContext);
 
         kennyFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kenny_total, mContext);
         kennyView.setImageDrawable(kennyFrames);
@@ -4321,6 +4328,68 @@ public class ReadActivityStandard extends ReadActivity {
                 stanVomFrames.stop();
                 stanView.setImageDrawable(stanVomFrames);
                 stanVomFrames.start();
+
+                MusicManager.startResumeMusic(Constants.SouthPark.STAN);
+
+                return true;
+            }
+        });
+
+        kennyExploxFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kenny_explox, mContext);
+
+        kennyView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                kennyExploxFrames.stop();
+                kennyView.setImageDrawable(kennyExploxFrames);
+                kennyExploxFrames.start();
+
+                MusicManager.startResumeMusic(Constants.SouthPark.KENNY);
+
+                return true;
+            }
+        });
+
+        cartmanFartFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_cartman_fart, mContext);
+
+        cartmanView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                cartmanFartFrames.stop();
+                cartmanView.setImageDrawable(cartmanFartFrames);
+                cartmanFartFrames.start();
+
+                MusicManager.startResumeMusic(Constants.SouthPark.CARTMAN);
+
+                return true;
+            }
+        });
+
+        kyleAngryFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_kyle_angry, mContext);
+
+        kyleView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                kyleAngryFrames.stop();
+                kyleView.setImageDrawable(kyleAngryFrames);
+                kyleAngryFrames.start();
+
+                return true;
+            }
+        });
+
+        wendyShortFrames = (AnimationDrawable) UtilsCustom.getDrawable(R.drawable.frames_wendy_short, mContext);
+
+        wendyView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                wendyShortFrames.stop();
+                wendyView.setImageDrawable(wendyShortFrames);
+                wendyShortFrames.start();
 
                 return true;
             }

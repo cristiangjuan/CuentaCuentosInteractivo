@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_wendy_short"  android:oneshot="true" >
+
+
+    <item android:drawable="@drawable/wendy_0" android:duration="100" />
+    <item android:drawable="@drawable/wendy_1" android:duration="100" />
+    <item android:drawable="@drawable/wendy_3" android:duration="100" />
+    <item android:drawable="@drawable/wendy_4_s" android:duration="100" />
+    <item android:drawable="@drawable/wendy_5_s" android:duration="100" />
+
+    
+</animation-list>

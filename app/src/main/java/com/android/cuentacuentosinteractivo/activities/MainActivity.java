@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         auto_btn = (ImageButton) findViewById(R.id.auto_btn);
 
         MusicManager.build(mContext);
+        MusicManager.createMusicSouthPark();
 
         //Inicializamos el detector de gestos
         gestureDetector = new GestureDetector(mContext, new GestureListener());

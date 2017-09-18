@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_kyle_angry"  android:oneshot="true" >
+
+
+    <item android:drawable="@drawable/kyle_angry_00_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_01_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_02_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_03_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_04_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_05_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_06_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_07_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_08_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_09_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_10_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_11_rs" android:duration="80" />
+    <item android:drawable="@drawable/kyle_angry_12_rs" android:duration="80" />
+
+</animation-list>

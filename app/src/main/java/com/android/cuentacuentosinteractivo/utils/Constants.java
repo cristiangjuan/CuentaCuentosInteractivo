@@ -140,11 +140,18 @@ public class Constants {
 	public class Audio {
 		
 		public static final int MAX_MUSIC = 100;
-		public static final int MAX_MUSIC_LIMITED = 60;
+		public static final int MAX_MUSIC_LIMITED = 100;
 		public static final int MAX_VOICE_LIMITED = 100;
 		public static final int FADE_MUSIC_TIME = 2500;
 		public static final int FADE_MUSIC_TIME_RETURN = 2000;
 		public static final int FADE_MUSIC_INTERVALS = 80;
 		
+	}
+
+	public class SouthPark{
+
+		public static final int KENNY = 0;
+		public static final int CARTMAN = 1;
+		public static final int STAN = 2;
 	}
 }
